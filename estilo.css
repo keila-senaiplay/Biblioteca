@@ -1,0 +1,152 @@
+/* Estilização básica do corpo e do html */
+body, html {
+    font-family: Arial, sans-serif; /* Define o tipo de fonte para o texto */
+    background-color: #f4f4f4; /* Define a cor de fundo */
+    margin: 0; /* Remove a margem padrão */
+    height: 100%; /* Define a altura para 100% da janela de visualização */
+    display: flex; /* Ativa o layout flexível */
+    flex-direction: column; /* Organiza os elementos filhos em uma coluna */
+}
+
+/* Estilização do container */
+.container {
+    flex: 1; /* Ocupa todo o espaço disponível na direção flexível */
+    text-align: center; /* Centraliza o texto dentro do container */
+    margin: 20px auto; /* Adiciona margem ao topo e ao fundo, e centraliza horizontalmente */
+}
+
+/* Estilização da imagem do cabeçalho */
+.header-image {
+    width: 100%; /* Define a largura para ocupar 100% do elemento pai */
+    max-width: 600px; /* Limita a largura máxima */
+    height: auto; /* Ajusta a altura automaticamente */
+    margin: 0 auto 20px; /* Centraliza horizontalmente e adiciona margem inferior */
+}
+
+/* Estilização dos cartões */
+.card {
+    background: #fff; /* Cor de fundo branca */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do cartão */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona margem vertical */
+    width: 600px; /* Largura fixa */
+}
+
+/* Estilização do formulário dentro dos cartões */
+.card form {
+    display: flex; /* Ativa o layout flexível */
+    flex-direction: column; /* Organiza os elementos filhos em uma coluna */
+}
+
+/* Estilização das etiquetas (labels) dentro dos cartões */
+.card label {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 5px; /* Adiciona margem abaixo das etiquetas */
+}
+
+/* Estilização dos campos de entrada de texto, e-mail, senha e botões de envio dentro dos cartões */
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="password"],
+.card input[type="submit"] {
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Margem abaixo dos campos */
+    border: 1px solid #0056b3; /* Bordas sólidas com cor definida */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Estilização do botão de envio dentro dos cartões */
+.card button[type="submit"] {
+    background: #004494; /* Cor de fundo */
+    color: #f4f4f4; /* Cor do texto */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    border: none; /* Remove as bordas */
+}
+
+/* Altera a cor de fundo do botão ao passar o mouse */
+.card button[type="submit"]:hover {
+    background: #0000ff; /* Cor de fundo mais clara */
+}
+
+/* Estilização do rodapé */
+.footer {
+    padding: 10px 0; /* Espaçamento interno vertical */
+    background: #004494; /* Cor de fundo */
+    color: #f4f4f4; /* Cor do texto */
+    width: 100%; /* Largura total */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilização da barra de navegação */
+.navbar {
+    background-color: #f4f4f4 !important; /* Define a cor de fundo */
+}
+
+/* Estilização dos itens do menu na barra de navegação */
+.navbar-nav .nav-item {
+    margin-right: 40px; /* Margem à direita dos itens */
+}
+
+/* Estilização dos links na barra de navegação */
+.navbar-nav li a {
+    background-color: #f4f4f4; /* Cor de fundo */
+    width: 140px; /* Largura fixa */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilização adicional para links na navegação */
+.nav-link {
+    color: #000000 !important; /* Cor do texto */
+    background-color: #f4f4f4; /* Cor de fundo */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave ao mudar cores */
+}
+
+/* Alterações de cor ao interagir com o link */
+.nav-link:hover, .nav-link:focus {
+    color: #f4f4f4 !important; /* Cor do texto ao passar o mouse */
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilização para telas menores */
+@media (max-width: 768px) {
+    .card, .header-image {
+        width: 90%; /* Ajuste de largura para dispositivos menores */
+    }
+}
+
+/* Classes adicionais para citações e justificação de texto */
+.citation {
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Texto em negrito */
+    font-style: italic; /* Texto em itálico */
+}
+
+.justified {
+    text-align: justify; /* Justifica o texto */
+}
+
+/* Estilização básica para tabelas */
+table {
+    margin-left: auto;
+    margin-right: auto; /* Centraliza a tabela horizontalmente */
+    border-collapse: collapse; /* Colapsa as bordas da tabela */
+}
+
+/* Estilização das células e cabeçalhos da tabela */
+th, td {
+    text-align: center; /* Centraliza o texto */
+    padding: 8px; /* Espaçamento interno */
+}
+
+/* Especificações adicionais para cabeçalhos e células da tabela */
+th {
+    background-color: #A9A9A9; /* Cor de fundo do cabeçalho */
+    color: #333; /* Cor do texto */
+}
+
+td {
+    background-color: #D3D3D3; /* Cor de fundo das células */
+}
